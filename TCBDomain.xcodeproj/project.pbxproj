@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B6A07802565041D0067B829 /* TCBDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6A07762565041D0067B829 /* TCBDomain.framework */; };
+		2B6A07852565041D0067B829 /* TCBDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A07842565041D0067B829 /* TCBDomainTests.swift */; };
+		2B6A093F25650C650067B829 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08EE25650C650067B829 /* String+Extensions.swift */; };
+		2B6A094025650C650067B829 /* Ultility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08EF25650C650067B829 /* Ultility.swift */; };
+		2B6A094125650C650067B829 /* UserConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08F125650C650067B829 /* UserConfiguration.swift */; };
+		2B6A094225650C650067B829 /* Offering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08F225650C650067B829 /* Offering.swift */; };
+		2B6A094325650C650067B829 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08F325650C650067B829 /* UserSession.swift */; };
+		2B6A094425650C650067B829 /* PaymentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08F425650C650067B829 /* PaymentInfo.swift */; };
+		2B6A094525650C650067B829 /* TCBResetPasswordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08F525650C650067B829 /* TCBResetPasswordResponse.swift */; };
+		2B6A094625650C650067B829 /* TCBCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08F625650C650067B829 /* TCBCard.swift */; };
+		2B6A094725650C650067B829 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08F725650C650067B829 /* AppError.swift */; };
+		2B6A094825650C650067B829 /* TransactionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08F825650C650067B829 /* TransactionItem.swift */; };
+		2B6A094925650C650067B829 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08F925650C650067B829 /* Message.swift */; };
+		2B6A094A25650C650067B829 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08FA25650C650067B829 /* User.swift */; };
+		2B6A094B25650C650067B829 /* RecentActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08FB25650C650067B829 /* RecentActivity.swift */; };
+		2B6A094C25650C650067B829 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08FC25650C650067B829 /* Balance.swift */; };
+		2B6A094D25650C650067B829 /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08FD25650C650067B829 /* UserCredentials.swift */; };
+		2B6A094E25650C650067B829 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08FE25650C650067B829 /* BarChart.swift */; };
+		2B6A094F25650C650067B829 /* ProfileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A08FF25650C650067B829 /* ProfileEntity.swift */; };
+		2B6A095025650C650067B829 /* Cashflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090025650C650067B829 /* Cashflow.swift */; };
+		2B6A095125650C650067B829 /* TCBCreateUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090125650C650067B829 /* TCBCreateUserResponse.swift */; };
+		2B6A095225650C650067B829 /* TCBRefreshTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090225650C650067B829 /* TCBRefreshTokenResponse.swift */; };
+		2B6A095325650C650067B829 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090325650C650067B829 /* BaseModel.swift */; };
+		2B6A095425650C650067B829 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090425650C650067B829 /* Bank.swift */; };
+		2B6A095525650C650067B829 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090625650C650067B829 /* CreditCard.swift */; };
+		2B6A095625650C650067B829 /* WalletAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090725650C650067B829 /* WalletAPI.swift */; };
+		2B6A095725650C650067B829 /* GetWalletEntriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090825650C650067B829 /* GetWalletEntriesResponse.swift */; };
+		2B6A095825650C650067B829 /* ExternalAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090925650C650067B829 /* ExternalAccount.swift */; };
+		2B6A095925650C650067B829 /* WalletEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090A25650C650067B829 /* WalletEntry.swift */; };
+		2B6A095A25650C650067B829 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090B25650C650067B829 /* BankAccount.swift */; };
+		2B6A095B25650C650067B829 /* GetWalletEntriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090C25650C650067B829 /* GetWalletEntriesRequest.swift */; };
+		2B6A095C25650C650067B829 /* OfflineSVA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090D25650C650067B829 /* OfflineSVA.swift */; };
+		2B6A095D25650C650067B829 /* SVA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090E25650C650067B829 /* SVA.swift */; };
+		2B6A095E25650C650067B829 /* RemoteUserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A090F25650C650067B829 /* RemoteUserSession.swift */; };
+		2B6A095F25650C650067B829 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091025650C650067B829 /* Product.swift */; };
+		2B6A096025650C650067B829 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091125650C650067B829 /* Transaction.swift */; };
+		2B6A096125650C650067B829 /* AuditMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091225650C650067B829 /* AuditMessage.swift */; };
+		2B6A096225650C650067B829 /* TCBDeleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091325650C650067B829 /* TCBDeleteResponse.swift */; };
+		2B6A096325650C650067B829 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091425650C650067B829 /* Account.swift */; };
+		2B6A096425650C650067B829 /* TCBUpdateInfoUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091525650C650067B829 /* TCBUpdateInfoUserResponse.swift */; };
+		2B6A096525650C650067B829 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091725650C650067B829 /* UserAPI.swift */; };
+		2B6A096625650C650067B829 /* KeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091825650C650067B829 /* KeyValue.swift */; };
+		2B6A096725650C650067B829 /* LoginCustomerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091925650C650067B829 /* LoginCustomerRequest.swift */; };
+		2B6A096825650C650067B829 /* LoginCustomerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091A25650C650067B829 /* LoginCustomerResponse.swift */; };
+		2B6A096925650C650067B829 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091B25650C650067B829 /* Customer.swift */; };
+		2B6A096A25650C650067B829 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091C25650C650067B829 /* Status.swift */; };
+		2B6A096B25650C650067B829 /* SpareFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091D25650C650067B829 /* SpareFields.swift */; };
+		2B6A096C25650C650067B829 /* AuditDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091E25650C650067B829 /* AuditDataType.swift */; };
+		2B6A096D25650C650067B829 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A091F25650C650067B829 /* Contact.swift */; };
+		2B6A096E25650C650067B829 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A092025650C650067B829 /* ProfileModel.swift */; };
+		2B6A096F25650C650067B829 /* MessagesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A092425650C650067B829 /* MessagesUseCase.swift */; };
+		2B6A097025650C650067B829 /* CashflowUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A092625650C650067B829 /* CashflowUseCase.swift */; };
+		2B6A097125650C650067B829 /* AuditUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A092825650C650067B829 /* AuditUseCase.swift */; };
+		2B6A097225650C650067B829 /* ProfileUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A092A25650C650067B829 /* ProfileUseCase.swift */; };
+		2B6A097325650C650067B829 /* AccountUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A092B25650C650067B829 /* AccountUseCase.swift */; };
+		2B6A097425650C650067B829 /* OfferingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A092D25650C650067B829 /* OfferingUseCase.swift */; };
+		2B6A097525650C650067B829 /* RecentActivityUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A092F25650C650067B829 /* RecentActivityUseCase.swift */; };
+		2B6A097625650C650067B829 /* ConfigurationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A093125650C650067B829 /* ConfigurationUseCase.swift */; };
+		2B6A097725650C650067B829 /* UseCasesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A093225650C650067B829 /* UseCasesProvider.swift */; };
+		2B6A097825650C650067B829 /* TransactionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A093325650C650067B829 /* TransactionUseCase.swift */; };
+		2B6A097925650C650067B829 /* DBSProductSummaryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A093525650C650067B829 /* DBSProductSummaryUseCase.swift */; };
+		2B6A097A25650C650067B829 /* DBSUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A093625650C650067B829 /* DBSUseCase.swift */; };
+		2B6A097B25650C650067B829 /* DBSContactUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A093725650C650067B829 /* DBSContactUseCase.swift */; };
+		2B6A097C25650C650067B829 /* DBSAuditUserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A093825650C650067B829 /* DBSAuditUserCase.swift */; };
+		2B6A097D25650C650067B829 /* DBSPaymentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A093925650C650067B829 /* DBSPaymentUseCase.swift */; };
+		2B6A097E25650C650067B829 /* FirebaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A093B25650C650067B829 /* FirebaseUseCase.swift */; };
+		2B6A097F25650C650067B829 /* RegisterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A093D25650C650067B829 /* RegisterUseCase.swift */; };
+		2B6A098025650C650067B829 /* LogInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A093E25650C650067B829 /* LogInUseCase.swift */; };
+		C6C94876A7EB3E0B4F87896F /* Pods_TCBDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788F64851B7A633E3972E07F /* Pods_TCBDomain.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B6A07812565041D0067B829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B6A076D2565041D0067B829 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B6A07752565041D0067B829;
+			remoteInfo = TCBDomain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E12E44913A66D361A3AAA1D /* Pods-TCBDomain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCBDomain.debug.xcconfig"; path = "Target Support Files/Pods-TCBDomain/Pods-TCBDomain.debug.xcconfig"; sourceTree = "<group>"; };
+		2B6A07762565041D0067B829 /* TCBDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCBDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B6A077F2565041D0067B829 /* TCBDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCBDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B6A07842565041D0067B829 /* TCBDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCBDomainTests.swift; sourceTree = "<group>"; };
+		2B6A07862565041D0067B829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B6A08EE25650C650067B829 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		2B6A08EF25650C650067B829 /* Ultility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ultility.swift; sourceTree = "<group>"; };
+		2B6A08F125650C650067B829 /* UserConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserConfiguration.swift; sourceTree = "<group>"; };
+		2B6A08F225650C650067B829 /* Offering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offering.swift; sourceTree = "<group>"; };
+		2B6A08F325650C650067B829 /* UserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		2B6A08F425650C650067B829 /* PaymentInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentInfo.swift; sourceTree = "<group>"; };
+		2B6A08F525650C650067B829 /* TCBResetPasswordResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCBResetPasswordResponse.swift; sourceTree = "<group>"; };
+		2B6A08F625650C650067B829 /* TCBCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCBCard.swift; sourceTree = "<group>"; };
+		2B6A08F725650C650067B829 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		2B6A08F825650C650067B829 /* TransactionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionItem.swift; sourceTree = "<group>"; };
+		2B6A08F925650C650067B829 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2B6A08FA25650C650067B829 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2B6A08FB25650C650067B829 /* RecentActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentActivity.swift; sourceTree = "<group>"; };
+		2B6A08FC25650C650067B829 /* Balance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		2B6A08FD25650C650067B829 /* UserCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCredentials.swift; sourceTree = "<group>"; };
+		2B6A08FE25650C650067B829 /* BarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		2B6A08FF25650C650067B829 /* ProfileEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEntity.swift; sourceTree = "<group>"; };
+		2B6A090025650C650067B829 /* Cashflow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cashflow.swift; sourceTree = "<group>"; };
+		2B6A090125650C650067B829 /* TCBCreateUserResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCBCreateUserResponse.swift; sourceTree = "<group>"; };
+		2B6A090225650C650067B829 /* TCBRefreshTokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCBRefreshTokenResponse.swift; sourceTree = "<group>"; };
+		2B6A090325650C650067B829 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		2B6A090425650C650067B829 /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		2B6A090625650C650067B829 /* CreditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		2B6A090725650C650067B829 /* WalletAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletAPI.swift; sourceTree = "<group>"; };
+		2B6A090825650C650067B829 /* GetWalletEntriesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetWalletEntriesResponse.swift; sourceTree = "<group>"; };
+		2B6A090925650C650067B829 /* ExternalAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalAccount.swift; sourceTree = "<group>"; };
+		2B6A090A25650C650067B829 /* WalletEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletEntry.swift; sourceTree = "<group>"; };
+		2B6A090B25650C650067B829 /* BankAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		2B6A090C25650C650067B829 /* GetWalletEntriesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetWalletEntriesRequest.swift; sourceTree = "<group>"; };
+		2B6A090D25650C650067B829 /* OfflineSVA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfflineSVA.swift; sourceTree = "<group>"; };
+		2B6A090E25650C650067B829 /* SVA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVA.swift; sourceTree = "<group>"; };
+		2B6A090F25650C650067B829 /* RemoteUserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteUserSession.swift; sourceTree = "<group>"; };
+		2B6A091025650C650067B829 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2B6A091125650C650067B829 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		2B6A091225650C650067B829 /* AuditMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditMessage.swift; sourceTree = "<group>"; };
+		2B6A091325650C650067B829 /* TCBDeleteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCBDeleteResponse.swift; sourceTree = "<group>"; };
+		2B6A091425650C650067B829 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		2B6A091525650C650067B829 /* TCBUpdateInfoUserResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCBUpdateInfoUserResponse.swift; sourceTree = "<group>"; };
+		2B6A091725650C650067B829 /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		2B6A091825650C650067B829 /* KeyValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValue.swift; sourceTree = "<group>"; };
+		2B6A091925650C650067B829 /* LoginCustomerRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCustomerRequest.swift; sourceTree = "<group>"; };
+		2B6A091A25650C650067B829 /* LoginCustomerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCustomerResponse.swift; sourceTree = "<group>"; };
+		2B6A091B25650C650067B829 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		2B6A091C25650C650067B829 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		2B6A091D25650C650067B829 /* SpareFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpareFields.swift; sourceTree = "<group>"; };
+		2B6A091E25650C650067B829 /* AuditDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditDataType.swift; sourceTree = "<group>"; };
+		2B6A091F25650C650067B829 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		2B6A092025650C650067B829 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		2B6A092425650C650067B829 /* MessagesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesUseCase.swift; sourceTree = "<group>"; };
+		2B6A092625650C650067B829 /* CashflowUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashflowUseCase.swift; sourceTree = "<group>"; };
+		2B6A092825650C650067B829 /* AuditUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditUseCase.swift; sourceTree = "<group>"; };
+		2B6A092A25650C650067B829 /* ProfileUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileUseCase.swift; sourceTree = "<group>"; };
+		2B6A092B25650C650067B829 /* AccountUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountUseCase.swift; sourceTree = "<group>"; };
+		2B6A092D25650C650067B829 /* OfferingUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferingUseCase.swift; sourceTree = "<group>"; };
+		2B6A092F25650C650067B829 /* RecentActivityUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentActivityUseCase.swift; sourceTree = "<group>"; };
+		2B6A093125650C650067B829 /* ConfigurationUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationUseCase.swift; sourceTree = "<group>"; };
+		2B6A093225650C650067B829 /* UseCasesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCasesProvider.swift; sourceTree = "<group>"; };
+		2B6A093325650C650067B829 /* TransactionUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionUseCase.swift; sourceTree = "<group>"; };
+		2B6A093525650C650067B829 /* DBSProductSummaryUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSProductSummaryUseCase.swift; sourceTree = "<group>"; };
+		2B6A093625650C650067B829 /* DBSUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSUseCase.swift; sourceTree = "<group>"; };
+		2B6A093725650C650067B829 /* DBSContactUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSContactUseCase.swift; sourceTree = "<group>"; };
+		2B6A093825650C650067B829 /* DBSAuditUserCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSAuditUserCase.swift; sourceTree = "<group>"; };
+		2B6A093925650C650067B829 /* DBSPaymentUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBSPaymentUseCase.swift; sourceTree = "<group>"; };
+		2B6A093B25650C650067B829 /* FirebaseUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseUseCase.swift; sourceTree = "<group>"; };
+		2B6A093D25650C650067B829 /* RegisterUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUseCase.swift; sourceTree = "<group>"; };
+		2B6A093E25650C650067B829 /* LogInUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInUseCase.swift; sourceTree = "<group>"; };
+		2B6A098625650D070067B829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		788F64851B7A633E3972E07F /* Pods_TCBDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCBDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D00EAED3F69AE24BC06F5C1 /* Pods-TCBDomain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCBDomain.release.xcconfig"; path = "Target Support Files/Pods-TCBDomain/Pods-TCBDomain.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B6A07732565041D0067B829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6C94876A7EB3E0B4F87896F /* Pods_TCBDomain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B6A077C2565041D0067B829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B6A07802565041D0067B829 /* TCBDomain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B6A076C2565041D0067B829 = {
+			isa = PBXGroup;
+			children = (
+				2B6A098625650D070067B829 /* Info.plist */,
+				2B6A08EC25650C650067B829 /* Source */,
+				2B6A07832565041D0067B829 /* TCBDomainTests */,
+				2B6A07772565041D0067B829 /* Products */,
+				CB91F7396CAEFE68C3660B91 /* Pods */,
+				561733C42AA40F8DA700BA80 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B6A07772565041D0067B829 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A07762565041D0067B829 /* TCBDomain.framework */,
+				2B6A077F2565041D0067B829 /* TCBDomainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B6A07832565041D0067B829 /* TCBDomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A07842565041D0067B829 /* TCBDomainTests.swift */,
+				2B6A07862565041D0067B829 /* Info.plist */,
+			);
+			path = TCBDomainTests;
+			sourceTree = "<group>";
+		};
+		2B6A08EC25650C650067B829 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A08ED25650C650067B829 /* Ultility */,
+				2B6A08F025650C650067B829 /* Models */,
+				2B6A092125650C650067B829 /* UseCases */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2B6A08ED25650C650067B829 /* Ultility */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A08EE25650C650067B829 /* String+Extensions.swift */,
+				2B6A08EF25650C650067B829 /* Ultility.swift */,
+			);
+			path = Ultility;
+			sourceTree = "<group>";
+		};
+		2B6A08F025650C650067B829 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A08F125650C650067B829 /* UserConfiguration.swift */,
+				2B6A08F225650C650067B829 /* Offering.swift */,
+				2B6A08F325650C650067B829 /* UserSession.swift */,
+				2B6A08F425650C650067B829 /* PaymentInfo.swift */,
+				2B6A08F525650C650067B829 /* TCBResetPasswordResponse.swift */,
+				2B6A08F625650C650067B829 /* TCBCard.swift */,
+				2B6A08F725650C650067B829 /* AppError.swift */,
+				2B6A08F825650C650067B829 /* TransactionItem.swift */,
+				2B6A08F925650C650067B829 /* Message.swift */,
+				2B6A08FA25650C650067B829 /* User.swift */,
+				2B6A08FB25650C650067B829 /* RecentActivity.swift */,
+				2B6A08FC25650C650067B829 /* Balance.swift */,
+				2B6A08FD25650C650067B829 /* UserCredentials.swift */,
+				2B6A08FE25650C650067B829 /* BarChart.swift */,
+				2B6A08FF25650C650067B829 /* ProfileEntity.swift */,
+				2B6A090025650C650067B829 /* Cashflow.swift */,
+				2B6A090125650C650067B829 /* TCBCreateUserResponse.swift */,
+				2B6A090225650C650067B829 /* TCBRefreshTokenResponse.swift */,
+				2B6A090325650C650067B829 /* BaseModel.swift */,
+				2B6A090425650C650067B829 /* Bank.swift */,
+				2B6A090525650C650067B829 /* Wallet */,
+				2B6A090F25650C650067B829 /* RemoteUserSession.swift */,
+				2B6A091025650C650067B829 /* Product.swift */,
+				2B6A091125650C650067B829 /* Transaction.swift */,
+				2B6A091225650C650067B829 /* AuditMessage.swift */,
+				2B6A091325650C650067B829 /* TCBDeleteResponse.swift */,
+				2B6A091425650C650067B829 /* Account.swift */,
+				2B6A091525650C650067B829 /* TCBUpdateInfoUserResponse.swift */,
+				2B6A091625650C650067B829 /* Login */,
+				2B6A091F25650C650067B829 /* Contact.swift */,
+				2B6A092025650C650067B829 /* ProfileModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B6A090525650C650067B829 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A090625650C650067B829 /* CreditCard.swift */,
+				2B6A090725650C650067B829 /* WalletAPI.swift */,
+				2B6A090825650C650067B829 /* GetWalletEntriesResponse.swift */,
+				2B6A090925650C650067B829 /* ExternalAccount.swift */,
+				2B6A090A25650C650067B829 /* WalletEntry.swift */,
+				2B6A090B25650C650067B829 /* BankAccount.swift */,
+				2B6A090C25650C650067B829 /* GetWalletEntriesRequest.swift */,
+				2B6A090D25650C650067B829 /* OfflineSVA.swift */,
+				2B6A090E25650C650067B829 /* SVA.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		2B6A091625650C650067B829 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A091725650C650067B829 /* UserAPI.swift */,
+				2B6A091825650C650067B829 /* KeyValue.swift */,
+				2B6A091925650C650067B829 /* LoginCustomerRequest.swift */,
+				2B6A091A25650C650067B829 /* LoginCustomerResponse.swift */,
+				2B6A091B25650C650067B829 /* Customer.swift */,
+				2B6A091C25650C650067B829 /* Status.swift */,
+				2B6A091D25650C650067B829 /* SpareFields.swift */,
+				2B6A091E25650C650067B829 /* AuditDataType.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2B6A092125650C650067B829 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A092225650C650067B829 /* Home */,
+				2B6A093025650C650067B829 /* Configuration */,
+				2B6A093225650C650067B829 /* UseCasesProvider.swift */,
+				2B6A093325650C650067B829 /* TransactionUseCase.swift */,
+				2B6A093425650C650067B829 /* DBS */,
+				2B6A093A25650C650067B829 /* Firebase */,
+				2B6A093C25650C650067B829 /* Onboarding */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		2B6A092225650C650067B829 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A092325650C650067B829 /* Messages */,
+				2B6A092525650C650067B829 /* Cashflow */,
+				2B6A092725650C650067B829 /* Audit */,
+				2B6A092925650C650067B829 /* Account */,
+				2B6A092C25650C650067B829 /* Offering */,
+				2B6A092E25650C650067B829 /* RecentActivity */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2B6A092325650C650067B829 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A092425650C650067B829 /* MessagesUseCase.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		2B6A092525650C650067B829 /* Cashflow */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A092625650C650067B829 /* CashflowUseCase.swift */,
+			);
+			path = Cashflow;
+			sourceTree = "<group>";
+		};
+		2B6A092725650C650067B829 /* Audit */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A092825650C650067B829 /* AuditUseCase.swift */,
+			);
+			path = Audit;
+			sourceTree = "<group>";
+		};
+		2B6A092925650C650067B829 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A092A25650C650067B829 /* ProfileUseCase.swift */,
+				2B6A092B25650C650067B829 /* AccountUseCase.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		2B6A092C25650C650067B829 /* Offering */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A092D25650C650067B829 /* OfferingUseCase.swift */,
+			);
+			path = Offering;
+			sourceTree = "<group>";
+		};
+		2B6A092E25650C650067B829 /* RecentActivity */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A092F25650C650067B829 /* RecentActivityUseCase.swift */,
+			);
+			path = RecentActivity;
+			sourceTree = "<group>";
+		};
+		2B6A093025650C650067B829 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A093125650C650067B829 /* ConfigurationUseCase.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		2B6A093425650C650067B829 /* DBS */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A093525650C650067B829 /* DBSProductSummaryUseCase.swift */,
+				2B6A093625650C650067B829 /* DBSUseCase.swift */,
+				2B6A093725650C650067B829 /* DBSContactUseCase.swift */,
+				2B6A093825650C650067B829 /* DBSAuditUserCase.swift */,
+				2B6A093925650C650067B829 /* DBSPaymentUseCase.swift */,
+			);
+			path = DBS;
+			sourceTree = "<group>";
+		};
+		2B6A093A25650C650067B829 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A093B25650C650067B829 /* FirebaseUseCase.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		2B6A093C25650C650067B829 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A093D25650C650067B829 /* RegisterUseCase.swift */,
+				2B6A093E25650C650067B829 /* LogInUseCase.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		561733C42AA40F8DA700BA80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				788F64851B7A633E3972E07F /* Pods_TCBDomain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB91F7396CAEFE68C3660B91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E12E44913A66D361A3AAA1D /* Pods-TCBDomain.debug.xcconfig */,
+				9D00EAED3F69AE24BC06F5C1 /* Pods-TCBDomain.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2B6A07712565041D0067B829 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2B6A07752565041D0067B829 /* TCBDomain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B6A078A2565041D0067B829 /* Build configuration list for PBXNativeTarget "TCBDomain" */;
+			buildPhases = (
+				C656871BEFB92E3AD4DF7809 /* [CP] Check Pods Manifest.lock */,
+				2B6A07712565041D0067B829 /* Headers */,
+				2B6A07722565041D0067B829 /* Sources */,
+				2B6A07732565041D0067B829 /* Frameworks */,
+				2B6A07742565041D0067B829 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCBDomain;
+			productName = TCBDomain;
+			productReference = 2B6A07762565041D0067B829 /* TCBDomain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2B6A077E2565041D0067B829 /* TCBDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B6A078D2565041D0067B829 /* Build configuration list for PBXNativeTarget "TCBDomainTests" */;
+			buildPhases = (
+				2B6A077B2565041D0067B829 /* Sources */,
+				2B6A077C2565041D0067B829 /* Frameworks */,
+				2B6A077D2565041D0067B829 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B6A07822565041D0067B829 /* PBXTargetDependency */,
+			);
+			name = TCBDomainTests;
+			productName = TCBDomainTests;
+			productReference = 2B6A077F2565041D0067B829 /* TCBDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B6A076D2565041D0067B829 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					2B6A07752565041D0067B829 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					2B6A077E2565041D0067B829 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 2B6A07702565041D0067B829 /* Build configuration list for PBXProject "TCBDomain" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B6A076C2565041D0067B829;
+			productRefGroup = 2B6A07772565041D0067B829 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B6A07752565041D0067B829 /* TCBDomain */,
+				2B6A077E2565041D0067B829 /* TCBDomainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B6A07742565041D0067B829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B6A077D2565041D0067B829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C656871BEFB92E3AD4DF7809 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCBDomain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B6A07722565041D0067B829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B6A094E25650C650067B829 /* BarChart.swift in Sources */,
+				2B6A096D25650C650067B829 /* Contact.swift in Sources */,
+				2B6A095E25650C650067B829 /* RemoteUserSession.swift in Sources */,
+				2B6A094425650C650067B829 /* PaymentInfo.swift in Sources */,
+				2B6A094525650C650067B829 /* TCBResetPasswordResponse.swift in Sources */,
+				2B6A096F25650C650067B829 /* MessagesUseCase.swift in Sources */,
+				2B6A096825650C650067B829 /* LoginCustomerResponse.swift in Sources */,
+				2B6A094725650C650067B829 /* AppError.swift in Sources */,
+				2B6A095F25650C650067B829 /* Product.swift in Sources */,
+				2B6A096025650C650067B829 /* Transaction.swift in Sources */,
+				2B6A096725650C650067B829 /* LoginCustomerRequest.swift in Sources */,
+				2B6A095225650C650067B829 /* TCBRefreshTokenResponse.swift in Sources */,
+				2B6A096325650C650067B829 /* Account.swift in Sources */,
+				2B6A097F25650C650067B829 /* RegisterUseCase.swift in Sources */,
+				2B6A097125650C650067B829 /* AuditUseCase.swift in Sources */,
+				2B6A095A25650C650067B829 /* BankAccount.swift in Sources */,
+				2B6A094825650C650067B829 /* TransactionItem.swift in Sources */,
+				2B6A094125650C650067B829 /* UserConfiguration.swift in Sources */,
+				2B6A096E25650C650067B829 /* ProfileModel.swift in Sources */,
+				2B6A097C25650C650067B829 /* DBSAuditUserCase.swift in Sources */,
+				2B6A095925650C650067B829 /* WalletEntry.swift in Sources */,
+				2B6A096A25650C650067B829 /* Status.swift in Sources */,
+				2B6A095525650C650067B829 /* CreditCard.swift in Sources */,
+				2B6A096225650C650067B829 /* TCBDeleteResponse.swift in Sources */,
+				2B6A096925650C650067B829 /* Customer.swift in Sources */,
+				2B6A095425650C650067B829 /* Bank.swift in Sources */,
+				2B6A095725650C650067B829 /* GetWalletEntriesResponse.swift in Sources */,
+				2B6A098025650C650067B829 /* LogInUseCase.swift in Sources */,
+				2B6A097425650C650067B829 /* OfferingUseCase.swift in Sources */,
+				2B6A097525650C650067B829 /* RecentActivityUseCase.swift in Sources */,
+				2B6A096C25650C650067B829 /* AuditDataType.swift in Sources */,
+				2B6A097925650C650067B829 /* DBSProductSummaryUseCase.swift in Sources */,
+				2B6A097D25650C650067B829 /* DBSPaymentUseCase.swift in Sources */,
+				2B6A094625650C650067B829 /* TCBCard.swift in Sources */,
+				2B6A095B25650C650067B829 /* GetWalletEntriesRequest.swift in Sources */,
+				2B6A096125650C650067B829 /* AuditMessage.swift in Sources */,
+				2B6A096425650C650067B829 /* TCBUpdateInfoUserResponse.swift in Sources */,
+				2B6A097B25650C650067B829 /* DBSContactUseCase.swift in Sources */,
+				2B6A094B25650C650067B829 /* RecentActivity.swift in Sources */,
+				2B6A095325650C650067B829 /* BaseModel.swift in Sources */,
+				2B6A094925650C650067B829 /* Message.swift in Sources */,
+				2B6A095625650C650067B829 /* WalletAPI.swift in Sources */,
+				2B6A095125650C650067B829 /* TCBCreateUserResponse.swift in Sources */,
+				2B6A094325650C650067B829 /* UserSession.swift in Sources */,
+				2B6A097625650C650067B829 /* ConfigurationUseCase.swift in Sources */,
+				2B6A094A25650C650067B829 /* User.swift in Sources */,
+				2B6A097A25650C650067B829 /* DBSUseCase.swift in Sources */,
+				2B6A095825650C650067B829 /* ExternalAccount.swift in Sources */,
+				2B6A096525650C650067B829 /* UserAPI.swift in Sources */,
+				2B6A097825650C650067B829 /* TransactionUseCase.swift in Sources */,
+				2B6A095D25650C650067B829 /* SVA.swift in Sources */,
+				2B6A096625650C650067B829 /* KeyValue.swift in Sources */,
+				2B6A097325650C650067B829 /* AccountUseCase.swift in Sources */,
+				2B6A097225650C650067B829 /* ProfileUseCase.swift in Sources */,
+				2B6A097025650C650067B829 /* CashflowUseCase.swift in Sources */,
+				2B6A094225650C650067B829 /* Offering.swift in Sources */,
+				2B6A096B25650C650067B829 /* SpareFields.swift in Sources */,
+				2B6A093F25650C650067B829 /* String+Extensions.swift in Sources */,
+				2B6A094C25650C650067B829 /* Balance.swift in Sources */,
+				2B6A094025650C650067B829 /* Ultility.swift in Sources */,
+				2B6A097E25650C650067B829 /* FirebaseUseCase.swift in Sources */,
+				2B6A094F25650C650067B829 /* ProfileEntity.swift in Sources */,
+				2B6A095025650C650067B829 /* Cashflow.swift in Sources */,
+				2B6A095C25650C650067B829 /* OfflineSVA.swift in Sources */,
+				2B6A094D25650C650067B829 /* UserCredentials.swift in Sources */,
+				2B6A097725650C650067B829 /* UseCasesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B6A077B2565041D0067B829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B6A07852565041D0067B829 /* TCBDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B6A07822565041D0067B829 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B6A07752565041D0067B829 /* TCBDomain */;
+			targetProxy = 2B6A07812565041D0067B829 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B6A07882565041D0067B829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B6A07892565041D0067B829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B6A078B2565041D0067B829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E12E44913A66D361A3AAA1D /* Pods-TCBDomain.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.techcombank.TCBDomain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B6A078C2565041D0067B829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D00EAED3F69AE24BC06F5C1 /* Pods-TCBDomain.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.techcombank.TCBDomain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B6A078E2565041D0067B829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TCBDomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.techcombank.TCBDomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B6A078F2565041D0067B829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TCBDomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.techcombank.TCBDomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B6A07702565041D0067B829 /* Build configuration list for PBXProject "TCBDomain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6A07882565041D0067B829 /* Debug */,
+				2B6A07892565041D0067B829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B6A078A2565041D0067B829 /* Build configuration list for PBXNativeTarget "TCBDomain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6A078B2565041D0067B829 /* Debug */,
+				2B6A078C2565041D0067B829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B6A078D2565041D0067B829 /* Build configuration list for PBXNativeTarget "TCBDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6A078E2565041D0067B829 /* Debug */,
+				2B6A078F2565041D0067B829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B6A076D2565041D0067B829 /* Project object */;
+}
