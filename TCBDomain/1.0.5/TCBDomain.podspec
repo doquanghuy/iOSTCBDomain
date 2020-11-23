@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'TCBDomain'
-  s.version = '1.0.6'
+  s.version = '1.0.5'
   s.summary = 'TCBDomain'
   s.homepage = 'https://bitbucket.techcombank.com.vn/scm/toreombb/iostcbcore.git'
   s.authors = { 'Techcombank' => 'info@techcombank.com.vn' }

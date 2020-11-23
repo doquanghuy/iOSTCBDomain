@@ -34,6 +34,14 @@ public struct LegacyUser: Equatable, Codable {
 }
 
 public struct User: Codable {
+    
+    public enum UserType: Int, Codable {
+        case unauthenticated
+        case `default`
+        case vinPartner
+    }
+    
+    public var type: UserType
     public let name: String?
     public let avatarURL: String?
     public var accessToken: String?
@@ -57,7 +65,27 @@ public struct User: Codable {
     
     public var userCredentials: UserCredentials?
     
-    public init(name: String? = nil, avatarURL: String? = nil, accessToken: String? = nil, expiresIn: Int? = nil, refreshExpiresIn: Int? = nil, refreshToken: String? = nil, tokenType: String? = nil, notBeforePolicy: Int? = nil, sessionState: String? = nil, scope: String? = nil, error: String? = nil, errorDescription: String? = nil, firstName: String? = nil, lastName: String? = nil, email: String? = nil, enabled: String? = nil, requiredActions: [String]? = nil, userId: String? = nil, userCredentials: UserCredentials? = nil) {
+    public init(type: UserType = .default,
+                name: String? = nil,
+                avatarURL: String? = nil,
+                accessToken: String? = nil,
+                expiresIn: Int? = nil,
+                refreshExpiresIn: Int? = nil,
+                refreshToken: String? = nil,
+                tokenType: String? = nil,
+                notBeforePolicy: Int? = nil,
+                sessionState: String? = nil,
+                scope: String? = nil,
+                error: String? = nil,
+                errorDescription: String? = nil,
+                firstName: String? = nil,
+                lastName: String? = nil,
+                email: String? = nil,
+                enabled: String? = nil,
+                requiredActions: [String]? = nil,
+                userId: String? = nil,
+                userCredentials: UserCredentials? = nil) {
+        self.type = type
         self.name = name
         self.avatarURL = avatarURL
         self.accessToken = accessToken
@@ -83,6 +111,7 @@ public struct User: Codable {
     }
     
     enum CodingKeys: String, CodingKey {
+        case type
         case name
         case avatarURL
         case accessToken = "access_token"

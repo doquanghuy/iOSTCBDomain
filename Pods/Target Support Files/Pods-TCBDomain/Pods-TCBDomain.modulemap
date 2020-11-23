@@ -1,6 +1,0 @@
-framework module Pods_TCBDomain {
-  umbrella header "Pods-TCBDomain-umbrella.h"
-
-  export *
-  module * { export * }
-}
